@@ -1,15 +1,29 @@
     // alphabet choices
-var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+// var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
     //pool of bosses to be chosen at random 
-var wordPool = ['Capra Demon', 'Nito', 'Gwyn, Lord of Cinder', 'Ornstein and Smough', 'Seath the Scaleless', 'Yhorm the Giant', 'Aldrich, Devourer of Gods' ];
-    
-    //choose a bosss from the pool at random
-var rand = wordPool[Math.floor(Math.random() * wordPool.length)];
-    document.write(rand);
+var wordPool = ['Capra Demon', 'Nito', 'Gwyn Lord of Cinder', 'Ornstein and Smough', 'Seath the Scaleless', 'Yhorm the Giant', 'Aldrich Devourer of Gods' ];
 
-    //choose word from random ON KEY PRESS, 
+
+document.onkeyup = function(event){
+
+    
+
+    //choose a bosss from the pool at random
+    var randomWord = wordPool[Math.floor(Math.random() * wordPool.length)];
+    
+
+    for (var i = 0; i < randomWord.length; i++){
+        document.getElementById("randomWord").append("_");
+        
+    }
+   
+}   
+
+// document.print = userGuess
     //have random word appear as blanks.
+
+
 
     // log chosen incorrect letters in document/html
     //log chosen correct letters IN PLACE of blanks 
@@ -17,6 +31,7 @@ var rand = wordPool[Math.floor(Math.random() * wordPool.length)];
     //log choices left
     // log wins/losses
 
+    //show image of boss after correct choices made
 
 
 
