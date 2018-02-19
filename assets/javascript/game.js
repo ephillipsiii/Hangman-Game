@@ -11,13 +11,14 @@ document.onkeyup = function(event){
 
     //choose a bosss from the pool at random
     var randomWord = wordPool[Math.floor(Math.random() * wordPool.length)];
+    console.log(randomWord);
+    var answerArray = [];
     
-
-    for (var i = 0; i < randomWord.length; i++){
-        document.getElementById("randomWord").append("_");
-        
-    }
-   
+        for (var i = 0; i < randomWord.length; i++){
+        answerArray[i] = "_";
+        }
+        console.log(answerArray);
+        var remainingLetters = randomWord.length;
 }   
 
 // document.print = userGuess
