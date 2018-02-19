@@ -17,13 +17,13 @@ document.onkeyup = function(event){
         for (var i = 0; i < randomWord.length; i++){
         answerArray[i] = "_";
         }
-        console.log(answerArray);
+        
         var remainingLetters = randomWord.length;
 }   
 
-// document.print = userGuess
-    //have random word appear as blanks.
 
+    //have random word appear as blanks- THEY DO IN THE CONSOLE!
+// document.print = userGuess
 
 
     // log chosen incorrect letters in document/html
