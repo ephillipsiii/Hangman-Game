@@ -19,6 +19,7 @@ document.onkeyup = function(event){
         }
         
         var remainingLetters = randomWord.length;
+        console.log(answerArray);
 }   
 
 
